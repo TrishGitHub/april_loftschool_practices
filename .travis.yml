@@ -17,3 +17,8 @@ script:
   - yarn build
   - yarn cypress:run
   - yarn test
+
+deploy:
+  provider: heroku
+  app: practice-12
+  api_key: $HEROKU_KEY
